@@ -11,4 +11,5 @@ cp src/ami.env out
                 stash includes: 'tools/build/build-ami.sh', name: 'tools'
             }
         }
+    }
 }
