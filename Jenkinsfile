@@ -8,7 +8,7 @@ pipeline {
                 sh label:'prepare script', script: '''#!/bin/bash
 # create UserData
 echo ${BUILD_TAG}
-echo src/ami.env
+cat src/ami.env
 '''
 
                 sh script: "echo ${BUILD_TAG}", label: "my step"
